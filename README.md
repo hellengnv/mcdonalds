@@ -1,4 +1,5 @@
 ## Landing Page McDonald's
+Criada com o intuito de aprimorar minhas habilidades em HTML CSS, e a responsividade.
 
 ## Visão Geral
 A Landing Page do McDonald's foi criada com o objetivo de:
