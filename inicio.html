@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="ico/logoMC.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <script src="script.js" defer></script>
+    <title>McDonald's</title>
+</head>
+
+<body>
+    <aside class="sidebar">
+
+        <div class="sidebar_header">
+            <header>
+                <img src="img/logoMC.png" class="logoMC">
+                <h1>McDonald's</h1>
+            </header>
+        </div>
+
+        <nav>
+            <button>
+                <a href="inicio.html">
+                    <i class="material-symbols-outlined"> web </i>
+                    <span>INÍCIO</span>
+                </a>
+            </button>
+
+            <button>
+                <a href="burgers.html">
+                    <i class="material-symbols-outlined"> lunch_dining </i>
+                    <span>SANDUÍCHES</span>
+                </a>
+            </button>
+
+            <button>
+                <a href="combos.html">
+                    <i class="material-symbols-outlined"> fastfood </i>
+                    <span>COMBOS</span>
+                </a>
+            </button>
+
+            <button>
+                <a href="sobremesa.html">
+                    <i class="material-symbols-outlined"> icecream </i>
+                    <span>SOBREMESAS</span>
+                </a>
+            </button>
+
+        </nav>
+    </aside>
+
+    <!--MENUU MOBILE-->
+
+    <button class="button-mobile" onclick="toggleMenu()" type="button">
+        <a href="#">
+            <i class="material-symbols-outlined"> menu </i>
+        </a>
+    </button>
+
+    <nav class="menu-mobile" id="menu-mobile">
+
+        <button class="button-close" onclick="toggleMenu()">
+            <a href="inicio.html">
+                <i class="material-symbols-outlined"> close </i>
+            </a>
+        </button>
+
+        <button>
+            <a href="inicio.html">
+                <i class="material-symbols-outlined"> web </i>
+                <span class="mobile-text">INÍCIO</span>
+            </a>
+        </button>
+
+        <button>
+            <a href="burgers.html">
+                <i class="material-symbols-outlined"> lunch_dining </i>
+                <span class="mobile-text">SANDUÍCHES</span>
+            </a>
+        </button>
+
+        <button>
+            <a href="combos.html">
+                <i class="material-symbols-outlined"> fastfood </i>
+                <span class="mobile-text">COMBOS</span>
+            </a>
+        </button>
+
+        <button>
+            <a href="sobremesa.html">
+                <i class="material-symbols-outlined"> icecream </i>
+                <span class="mobile-text">SOBREMESAS</span>
+            </a>
+        </button>
+
+    </nav>
+
+    <main>
+        <h1>BATEU AQUELA #FOMEDEMÉQUI?</h1>
+        <p>monte seu combo MC</p>
+        <div class="main_img">
+            <img src="img/combomcmelt.png" class="imgmelt">
+            <img src="img/combotasty.png" class="imgbig">
+            <img src="img/combomcchiken.png" class="imgchiken ">
+        </div>
+    </main>
+
+</body>
+</html>

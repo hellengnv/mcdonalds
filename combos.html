@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="combos.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="ico/logoMC.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <title>McDonald's</title>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar_header">
+            <header>
+                <img src="img/logoMC.png" class="logoMC">
+                <h1>McDonald's</h1>
+            </header>
+        </div>
+
+        <nav>
+            <button>
+                <a href="inicio.html">
+                    <i class="material-symbols-outlined"> web </i>
+                    <span>INÍCIO</span>
+                </a>
+            </button>
+
+            <button>
+                <a href="burgers.html">
+                    <i class="material-symbols-outlined"> lunch_dining </i>
+                    <span>SANDUÍCHES</span>
+                </a>
+            </button>
+
+            <button>
+                <a href="combos.html">
+                    <i class="material-symbols-outlined"> fastfood </i>
+                    <span>COMBOS</span>
+                </a>
+            </button>
+
+            <button>
+                <a href="sobremesa.html">
+                    <i class="material-symbols-outlined"> icecream </i>
+                    <span>SOBREMESAS</span>
+                </a>
+            </button>
+
+        </nav>
+
+    </aside>
+
+    <!--MENUU MOBILE-->
+
+    <button class="button-mobile" onclick="toggleMenu()" type="button">
+        <a href="#">
+            <i class="material-symbols-outlined"> menu </i>
+        </a>
+    </button>
+
+    <nav class="menu-mobile" id="menu-mobile">
+
+        <button class="button-close" onclick="toggleMenu()">
+            <a href="inicio.html">
+                <i class="material-symbols-outlined"> close </i>
+            </a>
+        </button>
+
+        <button>
+            <a href="inicio.html">
+                <i class="material-symbols-outlined"> web </i>
+                <span class="mobile-text">INÍCIO</span>
+            </a>
+        </button>
+
+        <button>
+            <a href="burgers.html">
+                <i class="material-symbols-outlined"> lunch_dining </i>
+                <span class="mobile-text">SANDUÍCHES</span>
+            </a>
+        </button>
+
+        <button>
+            <a href="combos.html">
+                <i class="material-symbols-outlined"> fastfood </i>
+                <span class="mobile-text">COMBOS</span>
+            </a>
+        </button>
+
+        <button>
+            <a href="sobremesa.html">
+                <i class="material-symbols-outlined"> icecream </i>
+                <span class="mobile-text">SOBREMESAS</span>
+            </a>
+        </button>
+
+    </nav>
+
+
+    <main>
+        <h1>McOfertas</h1>
+        <div class="container_cards">
+            <div class="cards">
+                <img src="img/combomcmelt.png" alt="">
+                <h2>McOFERTA Cheddar McMelt</h2>
+                <p>Composto por um hambúrguer (100% carne bovina), molho lácteo cremoso sabor cheddar, cebola ao molho
+                    shoyu e pão
+                    escuro com gergelim, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 33,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/combobigmac.png" alt="">
+                <h2>McOFERTA Big Mac</h2>
+                <p>Composto por dois hambúrgueres (100% carne bovina), alface americana, queijo sabor cheddar, molho
+                    especial,
+                    cebola, picles e pão com gergelim, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 33,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/combomcchiken.png" alt="">
+                <h2>McOFERTA McChicken</h2>
+                <p>Composto por frango empanado, maionese, alface americana e pão com gergelim, acompanhamento e bebida.
+                </p>
+                <h4>a partir de</h4>
+                <h3>R$ 31,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/combotasty.png" alt="">
+                <h2>McOFERTA Big Tasty</h2>
+                <p>Composto por um hambúrguer (100% carne bovina), queijo sabor emental, tomate, alface americana,
+                    cebola, molho
+                    Tasty e pão com gergelim, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 35,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/McOferta Média quarteirao com Queijo.png" alt="">
+                <h2>McOFERTA Quarteirão Com Queijo</h2>
+                <p>Composto por um hambúrguer (100% carne bovina), queijo sabor cheddar, picles, cebola, ketchup,
+                    mostarda e pão com
+                    gergelim, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 33,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/comboduplobacon.png" alt="">
+                <h2>McOFERTA Duplo Burger Bacon</h2>
+                <p>Composto por dois hambúrgueres (100% carne bovina), queijo sabor cheddar, cebola, fatias de bacon,
+                    ketchup,
+                    mostarda e pão com gergelim, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 32,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/combo brabo melt crispy.png" alt="">
+                <h2>McOFERTA Brabo Melt Crispy</h2>
+                <p>Composto por um delicioso molho lácteo cremoso sabor cheddar, hambúrguer de carne 100% bovina, a nova
+                    Méquinese,
+                    exclusiva maionese especial com sabor de carne defumada, cebola crispy, fatias de bacon, queijo
+                    sabor cheddar, tudo isso no pão tipo brioche trazendo uma explosão de sabores a cada mordida! Com
+                    acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 45 ,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/combo McCrispy Chicken Elite.png" alt="">
+                <h2>McOFERTA McCrispy Chicken Elite</h2>
+                <p>Composto por pão tipo brioche com batata, o novo molho Honey & Fire, que une laranja, mel e aroma de
+                    pimenta vermelha, bacon em fatias, alface, tomate, queijo sabor cheddar e carne 100% de peito de
+                    frango, temperada e empanada, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 40,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/combo brabo bacon salad.png" alt="">
+                <h2>McOFERTA Brabo Bacon Salad</h2>
+                <p>Composto pelo nosso pão tipo brioche, hambúrguer de carne 100% bovina, a nova Méquinese, exclusiva
+                    maionese especial com sabor de carne defumada, alface, tomate, fatias de bacon e queijo sabor
+                    cheddar, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 45,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/combo Big Tasty Bacon Barbecue.png" alt="">
+                <h2>McOFERTA Big Tasty Bacon Barbecue</h2>
+                <p>Composto por um hambúrguer (100% carne bovina), queijo sabor emental, molho barbecue (molho não
+                    emulsionado sabor
+                    barbecue), fatias de bacon, tomate, alface americana, cebola crispy, molho tasty (molho emulsionado
+                    sabor carne grelhada) e pão com gergelim, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 46,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/combo McCrispy Chicken Melt & Bacon.png" alt="">
+                <h2>McOFERTA McCrispy Chicken Melt & Bacon</h2>
+                <p>Composto por um sanduíche composto por pão tipo brioche com batata, carne 100% de peito de frango,
+                    temperada e
+                    empanada, molho cremoso sabor cheddar e fatias de bacon, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 39,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/combo McNífico Bacon.png" alt="">
+                <h2>McOFERTA McNífico Bacon</h2>
+                <p>Composto por um hambúrguer (100% carne bovina), com bacon, alface americana, cebola, queijo sabor
+                    cheddar, tomate,
+                    maionese, ketchup, mostarda e pão com gergelim, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 39,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/McOferta Media Duplo Cheddar McMelt .png" alt="">
+                <h2>McOferta Duplo Cheddar McMelt</h2>
+                <p>Dois hambúrgueres (100% carne bovina), molho cremoso sabor cheddar, cebola ao molho shoyu e pão
+                    escuro com gergelim, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 39,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/McOferta Média Brabo Empanado de Queijo Minas.png" alt="">
+                <h2>McOFERTA Brabo Empanado Queijo de Minas</h2>
+                <p>O novo Brabo Empanado de Queijo Minas é composto pelo nosso pão tipo brioche, hambúrguer de carne
+                    100% bovina, a Méquinese, exclusiva maionese especial com sabor de carne defumada, empanado de
+                    queijo minas, cebola crispy e alface americana. Com acompanhamento e Bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 39,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/McOferta Grande Duplo Quarterão.png" alt="">
+                <h2>McOferta Duplo Quarterão</h2>
+                <p>DUPLAMENTE inigualável dois deliciosos hambúrgueres, mostarda, ketchup, cebola e, claro, o delicioso
+                    queijo cheddar num pão com gergelim, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 39,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/McOferta Média Triplo Burger.png" alt="">
+                <h2>McOferta Triplo Burger</h2>
+                <p>Três hambúrgueres (100% carne bovina), queijo cheddar, cebola, picles, ketchup, mostarda e pão com
+                    gergelim, acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 39,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/McOferta Média Duplo Burger com Queijo.png" alt="">
+                <h2>McOferta Duplo Burger com Queijo</h2>
+                <p>Dois hambúrgueres, uma explosão de sabor, acompanhamento e bebida. Dois deliciosos hambúrgueres de
+                    carne 100% bovina, queijo cheddar derretido, picles, cebola picada, ketchup e mostarda,
+                    acompanhamento e bebida.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 39,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+        </div>
+
+        <div>
+            <h1>McLanche Feliz</h1>
+        </div>
+
+        <div class="container_cards">
+            <div class="cards">
+                <img src="img/familyboxpara2.png" alt="">
+                <h2>Family Box para 2</h2>
+                <p>Composto por 01 McLanche Feliz e 01 McOferta média Big Mac, Quarterão, Cheddar McMelt ou McChicken.
+                </p>
+                <h4>a partir de</h4>
+                <h3>R$ 33,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+
+            <div class="cards">
+                <img src="img/familyboxpara2.png" alt="">
+                <h2>Family Box para 2</h2>
+                <p>Composto por 01 McLanche Feliz e 01 McOferta média Big Mac, Quarterão, Cheddar McMelt ou McChicken.
+                </p>
+                <h4>a partir de</h4>
+                <h3>R$ 33,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+        </div>
+        </div>
+
+
+        <div>
+            <h1>Méqui Box</h1>
+        </div>
+
+        <div class="container_cards">
+            <div class="cards">
+                <img src="img/familyboxpara2.png" alt="">
+                <h2>Family Box para 2</h2>
+                <p>Composto por 01 McLanche Feliz e 01 McOferta média Big Mac, Quarterão, Cheddar McMelt ou McChicken.
+                </p>
+                <h4>a partir de</h4>
+                <h3>R$ 33,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/familyboxpara3.png" alt="">
+                <h2>Family Box para 3</h2>
+                <p>Composto por 01 McLanche Feliz e 02 McOfertas médias Big Mac, Quarterão, Cheddar McMelt ou McChicken.
+                </p>
+                <h4>a partir de</h4>
+                <h3>R$ 33,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/méquiboxclassicopara4.png" alt="">
+                <h2>Méqui Box Clássico para 4</h2>
+                <p>Méqui Box Clássico para 4 Composto por 04 McOfertas médias: Big Mac, Quarterão, Cheddar McMelt ou
+                    McChicken.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 31,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/méquiboxclassicopara3.png" alt="">
+                <h2>Méqui Box Clássico para 3</h2>
+                <p>Méqui Box Clássico para 3 Composto por 03 McOfertas médias: Big Mac, Quarterão, Cheddar McMelt ou
+                    McChicken.</p>
+                <h4>a partir de</h4>
+                <h3>R$ 35,90</h3>
+                <p>Bebidas</p>
+                <select name="sabores" id="sabores">
+                    <option>Coca-Cola</option>
+                    <option>Coca-Cola Zero</option>
+                    <option>Fanta Laranja</option>
+                    <option>Fanta Guanará</option>
+                    <option>Sprite</option>
+                    <option>Del Valle Laranja</option>
+                    <option>Del Valle Uva</option>
+                    <option>Água Mineral</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+    </main>

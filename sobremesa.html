@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sobremesa.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="ico/logoMC.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <title>McDonald's</title>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar_header">
+            <header>
+                <img src="img/logoMC.png" class="logoMC">
+                <h1>McDonald's</h1>
+            </header>
+        </div>
+
+        <nav>
+            <button>
+                <a href="inicio.html">
+                    <i class="material-symbols-outlined"> web </i>
+                    <span>INÍCIO</span>
+                </a>
+            </button>
+
+            <button>
+                <a href="burgers.html">
+                    <i class="material-symbols-outlined"> lunch_dining </i>
+                    <span>SANDUÍCHES</span>
+                </a>
+            </button>
+
+            <button>
+                <a href="combos.html">
+                    <i class="material-symbols-outlined"> fastfood </i>
+                    <span>COMBOS</span>
+                </a>
+            </button>
+
+            <button>
+                <a href="sobremesa.html">
+                    <i class="material-symbols-outlined"> icecream </i>
+                    <span>SOBREMESAS</span>
+                </a>
+            </button>
+
+        </nav>
+
+    </aside>
+
+    <!--MENUU MOBILE-->
+
+    <button class="button-mobile" onclick="toggleMenu()" type="button">
+        <a href="#">
+            <i class="material-symbols-outlined"> menu </i>
+        </a>
+    </button>
+
+    <nav class="menu-mobile" id="menu-mobile">
+
+        <button class="button-close" onclick="toggleMenu()">
+            <a href="inicio.html">
+                <i class="material-symbols-outlined"> close </i>
+            </a>
+        </button>
+
+        <button>
+            <a href="inicio.html">
+                <i class="material-symbols-outlined"> web </i>
+                <span class="mobile-text">INÍCIO</span>
+            </a>
+        </button>
+
+        <button>
+            <a href="burgers.html">
+                <i class="material-symbols-outlined"> lunch_dining </i>
+                <span class="mobile-text">SANDUÍCHES</span>
+            </a>
+        </button>
+
+        <button>
+            <a href="combos.html">
+                <i class="material-symbols-outlined"> fastfood </i>
+                <span class="mobile-text">COMBOS</span>
+            </a>
+        </button>
+
+        <button>
+            <a href="sobremesa.html">
+                <i class="material-symbols-outlined"> icecream </i>
+                <span class="mobile-text">SOBREMESAS</span>
+            </a>
+        </button>
+
+    </nav>
+
+
+    <main>
+        <h1>Sobremesas</h1>
+        <div class="container_cards">
+            <div class="cards">
+                <img src="img/casquinhas.png" alt="">
+                <h2>Casquinha</h2>
+                <p>A sobremesa que o Brasil todo adora. Uma casquinha supercrocante, com bebida láctea que vai bem a
+                    qualquer hora.</p>
+                <h3>R$ 27,90</h3>
+                <p>Sabores</p>
+                <select name="sabores" id="sabores">
+                    <option>Chocolate</option>
+                    <option>Mista</option>
+                    <option>Baunilha</option>
+                </select>
+
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/mccolosso.png" alt="">
+                <h2>McColosso</h2>
+                <p>Não é uma sobremesa qualquer, é um verdadeiro colosso. Uma supercasquinha de biscoito em forma de
+                    cone, recheada com bebida láctea e uma sensacional cobertura. E, além
+                    de todo esse sabor, um canudinho de biscoito supercrocante.</p>
+                <h3>R$ 26,90</h3>
+                <p>Sabores</p>
+                <select name="sabores" id="sabores">
+                    <option>Chocolate</option>
+                    <option>Caramelo</option>
+                </select>
+
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/sundae.png" alt="">
+                <h2>Sundae</h2>
+                <p>A medida certa entre cobertura e bebida láctea sabor baunilha que pode fazer você viver
+                    uma experiência explosiva, além de amendoins crocantes. Desfrute dessa combinação perfeita!</p>
+                <h3>R$ 24,90</h3>
+                <p>Sabores</p>
+                <select name="sabores" id="sabores">
+                    <option>Chocolate</option>
+                    <option>Caramelo</option>
+                    <option>Morango</option>
+                </select>
+
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/topsundae.png" alt="">
+                <h2>Top Sundae</h2>
+                <p>Sobremesa com Bebida láctea sabor baunilha e uma supercamada de cobertura e ainda por cima com farofa
+                    de paçoca. O canudo completa a tentação.</p>
+                <h3>R$ 35,90</h3>
+                <p>Sabores</p>
+                <select name="sabores" id="sabores">
+                    <option>Chocolate</option>
+                    <option>Caramelo</option>
+                    <option>Morango</option>
+                </select>
+
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/mcshake.png" alt="">
+                <h2>McShake</h2>
+                <p>Deliciosamente cremoso.O McShake é feito com leite e batido na hora. Uma delícia!
+                </p>
+                <h3>R$ 27,90</h3>
+                <p>Sabores</p>
+                <select name="sabores" id="sabores">
+                    <option>Ovomaltine</option>
+                    <option>Kopenhagen</option>
+                    <option>Morango</option>
+                </select>
+
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/kitkat com leite em po mais querido do brasil.png" alt="">
+                <h2>Kit Kat com leite em pó mais querido do Brasil</h2>
+                <p>Sobremesa composta por bebida láctea sabor baunilha, cobertura, leite em pó e chocolate Kit Kat.</p>
+                <h3>R$ 39,90</h3>
+                <p>Sabores</p>
+                <select name="sabores" id="sabores">
+                    <option>Chocolate</option>
+                    <option>Caramelo</option>
+                    <option>Morango</option>
+                </select>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/mcflurry m&ms.png" alt="">
+                <h2>McFlurry M&M's</h2>
+                <p>Composto por bebida láctea sabor baunilha, cobertura e M&M's ® chocolate ao leite.</p>
+                <h3>R$ 39,90</h3>
+                <p>Sabores</p>
+                <select name="sabores" id="sabores">
+                    <option>Chocolate</option>
+                    <option>Caramelo</option>
+                    <option>Morango</option>
+                </select>
+
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/mcflurry ovomaltine rocks.png" alt="">
+                <h2>McFlurry Ovomaltine Rocks</h2>
+                <p>Para sua #FomeGeladinhadeMéqui nossos deliciosos McFlurry, com bebida láctea, flocos de ovomaltine e
+                    cobertura.</p>
+                <h3>R$ 32,90</h3>
+                <p>Sabores</p>
+                <select name="sabores" id="sabores">
+                    <option>Chocolate</option>
+                    <option>Caramelo</option>
+                    <option>Morango</option>
+                </select>
+
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/torta.png" alt="">
+                <h2>Torta</h2>
+                <p>A medida certa entre cobertura de caramelo e bebida láctea sabor baunilha que pode fazer você viver
+                    uma experiência explosiva, além de amendoins crocantes. Desfrute dessa combinação perfeita!</p>
+                <h3>R$ 25,90</h3>
+                <p>Sabores</p>
+                <select name="sabores" id="sabores">
+                    <option>Banana</option>
+                    <option>Maçã</option>
+                </select>
+
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/petit suisse sabor morango.png" alt="">
+                <h2>Petit Suisse Sabor Morango</h2>
+                <p>O mais delicioso iogurte desnatado sabor morango.</p>
+                <h3>R$ 39,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+
+        </div>
+    </main>

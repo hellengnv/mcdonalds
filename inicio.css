@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@200;300;400&family=Prompt&family=Signika&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffb;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    border-right: 1px solid #87888a;
+    background-color: #fff;
+}
+
+.sidebar header {
+    width: 100%;
+    margin-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(255, 174, 0);
+}
+
+header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logoMC {
+    width: 50px;
+}
+
+.sidebar button {
+    display: flex;
+    justify-content: start;
+    width: 250px;
+    height: 50px;
+    padding: 15px;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    background: transparent;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sidebar button:hover {
+    background-color: rgba(255, 174, 0, 0.863);
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: 10px;
+}
+
+
+main h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: red;
+    font-size: 80px;
+    margin-top: 100px;
+    margin-left: 380px;
+}
+
+main p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgba(255, 174, 0, 0.863);
+    font-size: 40px;
+    margin-left: 380px;
+}
+
+.main_img {
+    display: flex;
+}
+
+.imgmelt {
+    display: flex;
+    margin-left: 380px;
+    width: 580px;
+    height: 550px;
+    background-color: rgba(255, 174, 0, 0.863);
+    border-radius: 50%;
+}
+
+.imgbig {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 200px;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 174, 0, 0.863);
+    border-radius: 50%;
+}
+
+.imgchiken {
+    display: flex;
+    margin-left: 30px;
+    width: 320px;
+    height: 320px;
+    background-color: rgba(255, 174, 0, 0.863);
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 998px) {
+    .sidebar {
+        width: 72px;
+    }
+
+    .sidebar button > a {
+        width: 50px;
+    }
+
+    /* tirando o texto da tela quando diminuir e só ficar os icones */
+    .sidebar button > a > i {
+        opacity: 0;
+        visibility: hidden; /* esconde da tela */
+    }
+
+    main h1 {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color: red;
+        font-size: 40px;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+    
+    main p {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        color: rgba(255, 174, 0, 0.863);
+        font-size: 20px;
+        margin-left: 0;
+    }
+    
+    .main_img {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .imgmelt {
+        display: flex;
+        margin-left: 30px;
+        width: 150px;
+        height: 150px;
+        background-color: rgba(255, 174, 0, 0.863);
+        border-radius: 50%;
+        margin-top: 20px;
+    }
+    
+    .imgbig {
+        display: flex;
+        margin-left: 150px;
+        margin-top: 0;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(255, 174, 0, 0.863);
+        border-radius: 50%;
+    }
+    
+    .imgchiken {
+        display: flex;
+        margin-left: 10px;
+        margin-top: 10px;
+        width: 300px;
+        height: 300px;
+        background-color: rgba(255, 174, 0, 0.863);
+        border-radius: 50%;
+    }
+}
+
+.button-mobile {
+    display: none;
+    align-self: flex-start;
+    align-items: center;
+    margin: 16px;
+    background: transparent;
+    color: #FFF;
+    border: 0;
+}
+
+.button-mobile a {
+    font-size: 24px;
+    margin-left: 8px;
+    text-decoration: none;
+}
+
+.button-close a i {
+    font-size: 42px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-mobile-active {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 99; /* ficar sobre qualquer coisa da tela */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    overflow: hidden; /* se passar algo da tela, esconde */
+    padding: 10px;
+}
+
+.menu-mobile-active button {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+.menu-mobile-active button:hover {
+    background-color: rgba(255, 174, 0, 0.863);
+    width: 180px;
+}   
+
+.menu-mobile-active button > a {
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.mobile-text {
+    font-size: 22px;
+    margin-left: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        display: none;
+    }
+
+    .button-mobile {
+        display: flex;
+    }
+
+    .main {
+        margin-left: 6px;
+    }
+}
+
+     

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="burgers.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="ico/logoMC.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+    <title>McDonald's</title>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="sidebar_header">
+            <header>
+                <img src="img/logoMC.png" class="logoMC">
+                <h1>McDonald's</h1>
+            </header>
+        </div>
+
+        <nav>
+            <button>
+                <a href="inicio.html">
+                    <i class="material-symbols-outlined"> web </i>
+                    <span>INÍCIO</span>
+                </a>
+            </button>
+
+            <button>
+                <a href="burgers.html">
+                    <i class="material-symbols-outlined"> lunch_dining </i>
+                    <span>SANDUÍCHES</span>
+                </a>
+            </button>
+
+            <button>
+                <a href="combos.html">
+                    <i class="material-symbols-outlined"> fastfood </i>
+                    <span>COMBOS</span>
+                </a>
+            </button>
+
+            <button>
+                <a href="sobremesa.html">
+                    <i class="material-symbols-outlined"> icecream </i>
+                    <span>SOBREMESAS</span>
+                </a>
+            </button>
+
+        </nav>
+
+    </aside>
+
+    <!--MENUU MOBILE-->
+
+    <button class="button-mobile" onclick="toggleMenu()" type="button">
+        <a href="#">
+            <i class="material-symbols-outlined"> menu </i>
+        </a>
+    </button>
+
+    <nav class="menu-mobile" id="menu-mobile">
+
+        <button class="button-close" onclick="toggleMenu()">
+            <a href="inicio.html">
+                <i class="material-symbols-outlined"> close </i>
+            </a>
+        </button>
+
+        <button>
+            <a href="inicio.html">
+                <i class="material-symbols-outlined"> web </i>
+                <span class="mobile-text">INÍCIO</span>
+            </a>
+        </button>
+
+        <button>
+            <a href="burgers.html">
+                <i class="material-symbols-outlined"> lunch_dining </i>
+                <span class="mobile-text">SANDUÍCHES</span>
+            </a>
+        </button>
+
+        <button>
+            <a href="combos.html">
+                <i class="material-symbols-outlined"> fastfood </i>
+                <span class="mobile-text">COMBOS</span>
+            </a>
+        </button>
+
+        <button>
+            <a href="sobremesa.html">
+                <i class="material-symbols-outlined"> icecream </i>
+                <span class="mobile-text">SOBREMESAS</span>
+            </a>
+        </button>
+
+    </nav>
+
+
+    <main>
+        <h1>Sanduíches</h1>
+        <div class="container_cards">
+            <div class="cards">
+                <img src="img/mcmelt.png" alt="">
+                <h2>Cheddar McMelt</h2>
+                <p>Um hambúrguer (100% carne bovina), molho lácteo cremoso sabor cheddar, cebola ao molho shoyu e pão
+                    escuro com gergelim</p>
+                <h3>R$ 27,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/bigmac.png" alt="">
+                <h2>Big Mac</h2>
+                <p>Dois hambúrgueres (100% carne bovina), alface americana, queijo sabor cheddar, molho especial,
+                    cebola, picles e pão com gergelim.</p>
+                <h3>R$ 26,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/mchicken.png" alt="">
+                <h2>McChicken</h2>
+                <p>Frango empanado, maionese, alface americana e pão com gergelim.</p>
+                <h3>R$ 24,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/mctasty.png" alt="">
+                <h2>Big Tasty</h2>
+                <p>Um hambúrguer (100% carne bovina), queijo sabor emental, tomate, alface americana, cebola, molho
+                    Tasty e pão com gergelim.</p>
+                <h3>R$ 35,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/quarteirao.png" alt="">
+                <h2>Quarteirão com queijo</h2>
+                <p>Um hambúrguer (100% carne bovina), queijo sabor cheddar, picles, cebola, ketchup, mostarda e pão com
+                    gergelim.</p>
+                <h3>R$ 27,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/duplobacon.png" alt="">
+                <h2>Duplo Burger Bacon</h2>
+                <p>Dois hambúrgueres (100% carne bovina), queijo sabor cheddar, cebola, fatias de bacon, ketchup,
+                    mostarda e pão com gergelim.</p>
+                <h3>R$ 25,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/brabomeltcrispy.png" alt="">
+                <h2>Brabo Melt Crispy</h2>
+                <p>Delicioso molho lácteo cremoso sabor cheddar, hambúrguer de carne 100% bovina, a nova Méquinese,
+                    exclusiva maionese especial com sabor de carne defumada, cebola crispy, fatias de bacon, queijo
+                    sabor cheddar, tudo isso no pão tipo brioche trazendo uma explosão de sabores a cada mordida!</p>
+                <h3>R$ 39,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/braboempanadodequeijominas.png" alt="">
+                <h2>Brabo Empanado de Queijo Minas</h2>
+                <p>O novo Brabo Empanado de Queijo Minas é composto pelo nosso pão tipo brioche, hambúrguer de carne
+                    100% bovina, a Méquinese, exclusiva maionese especial com sabor de carne defumada, empanado de
+                    queijo minas, cebola crispy e alface.</p>
+                <h3>R$ 25,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/mccrispychickenelite.png" alt="">
+                <h2>McCRISPY Chicken Elite</h2>
+                <p>Composto por pão tipo brioche com batata, o novo molho Honey & Fire, que une laranja, mel e aroma de
+                    pimenta vermelha, bacon em fatias, alface, tomate, queijo sabor cheddar e carne 100% de peito de
+                    frango, temperada e empanada</p>
+                <h3>R$ 32,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/brabobaconsalad.png" alt="">
+                <h2>Brabo Bacon Salad</h2>
+                <p>Composto pelo nosso pão tipo brioche, hambúrguer de carne 100% bovina, a nova Méquinese, exclusiva
+                    maionese especial com sabor de carne defumada, alface, tomate, fatias de bacon e queijo sabor
+                    cheddar.</p>
+                <h3>R$ 39,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/BigTastyBaconBarbecue.png" alt="">
+                <h2>Big Tasty Bacon Barbecue</h2>
+                <p>Um hambúrguer (100% carne bovina), queijo sabor emental, molho barbecue (molho não emulsionado sabor
+                    barbecue), fatias de bacon, tomate, alface americana, cebola crispy, molho tasty (molho emulsionado
+                    sabor carne grelhada) e pão com gergelim.</p>
+                <h3>R$ 40,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/McCrispy Chicken Melt & Bacon.png" alt="">
+                <h2>McCrispy Chicken Melt & Bacon</h2>
+                <p>Sanduíche composto por pão tipo brioche com batata, carne 100% de peito de frango, temperada e
+                    empanada, molho cremoso sabor cheddar e fatias de bacon.</p>
+                <h3>R$ 35,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/McNífico Bacon.png" alt="">
+                <h2>McNífico Bacon</h2>
+                <p>Um hambúrguer (100% carne bovina), bacon, alface americana, cebola, queijo sabor cheddar, tomate,
+                    maionese, ketchup, mostarda e pão com gergelim.</p>
+                <h3>R$ 30,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/duplocheddarmcmelt.png" alt="">
+                <h2>Duplo Cheddar McMelt</h2>
+                <p>Dois hambúrgueres (100% carne bovina), molho lácteo cremoso sabor cheddar, cebola ao molho shoyu e
+                    pão escuro com gergelim.</p>
+                <h3>R$ 30,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/duploquarteirao.png" alt="">
+                <h2>Duplo Quarteirão</h2>
+                <p>Dois hambúrgueres (100% carne bovina), mostarda, ketchup, cebola, queijo sabor cheddar e pão com
+                    gergelim.</p>
+                <h3>R$ 30,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/triploburger.png" alt="">
+                <h2>Triplo Burger</h2>
+                <p>Três hambúrgueres (100% carne bovina), queijo sabor cheddar, cebola, picles, ketchup, mostarda e pão
+                    com gergelim.</p>
+                <h3>R$ 30,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/duploburgercomqueijo.png" alt="">
+                <h2>Duplo Burger Com Queijo</h2>
+                <p>Dois hambúrgueres, uma explosão de sabor. Dois deliciosos hambúrgueres de carne 100% bovina, queijo
+                    sabor cheddar derretido, picles, cebola picada, ketchup, mostarda e pão com gergelim.</p>
+                <h3>R$ 30,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/mcfiesta.png" alt="">
+                <h2>McFiesta</h2>
+                <p>Pão sem gergelim, hambúrguer de carne 100% bovina, alface, tomate e molho tasty (molho emulsionado
+                    sabor carne grelhada).</p>
+                <h3>R$ 30,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/cheeseburger.png" alt="">
+                <h2>Cheeseburger</h2>
+                <p>Um hamburguer (100% carne bovina), queijo sabor cheddar, cebola, picles, ketchup, mostarda e pão sem
+                    gergelim.</p>
+                <h3>R$ 30,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+            <div class="cards">
+                <img src="img/hamburger.png" alt="">
+                <h2>Hamburger</h2>
+                <p>Um Hamburguer (100% carne bovina), cebola, picles, ketchup, mostarda e pão sem gergelim.</p>
+                <h3>R$ 30,90</h3>
+                <button>
+                    <span>Adicionar ao carrinho</span>
+                    <i class="material-symbols-outlined"> shopping_cart </i>
+                </button>
+            </div>
+
+        </div>
+    </main>
